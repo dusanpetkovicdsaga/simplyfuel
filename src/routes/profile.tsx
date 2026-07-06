@@ -151,36 +151,7 @@ function Page() {
       </div>
       <BottomNav onLogMeal={() => setLogMealOpen(true)} />
       <LogMealModal open={logMealOpen} onOpenChange={setLogMealOpen} />
-      <AuthModal open={authOpen} onOpenChange={setAuth
-            label="Calories (kcal)"
-            value={user.dailyCalories}
-            onChange={(v) => updateUser({ dailyCalories: v })}
-          />
-          <GoalRow
-            label="Protein (g)"
-            value={user.proteinGoal}
-            onChange={(v) => updateUser({ proteinGoal: v })}
-          />
-          <GoalRow
-            label="Carbs (g)"
-            value={user.carbsGoal}
-            onChange={(v) => updateUser({ carbsGoal: v })}
-          />
-          <GoalRow
-            label="Fat (g)"
-            value={user.fatGoal}
-            onChange={(v) => updateUser({ fatGoal: v })}
-          />
-          <button
-            onClick={() => toast.success("Goals saved")}
-            className="mt-2 h-11 w-full rounded-2xl bg-primary text-sm font-semibold text-primary-foreground"
-          >
-            Save
-          </button>
-        </div>
-      </div>
-      <BottomNav onLogMeal={() => setOpen(true)} />
-      <LogMealModal open={open} onOpenChange={setOpen} />
+      <AuthModal open={authOpen} onOpenChange={setAuthOpen} />
       <Toaster position="top-center" />
     </div>
   );
