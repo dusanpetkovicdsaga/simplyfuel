@@ -29,7 +29,36 @@ function Page() {
   const syncing = useAppStore((s) => s.syncing);
 
   // Load profile when user signs in
-  useEff{/* Auth Status Card */}
+  useEffect(() => {
+    if (authUser) {
+      syncToSupabase(authUser.id);
+    }
+  }, [authUser]);
+
+  const handleSignOut = async () => {
+    await signOut();
+    toast.success("Signed out successfully");
+  };
+
+  const handleSaveProfile = async () => {
+    await updateUser({
+      name: user.name,
+      dailyCalories: user.dailyCalories,
+      proteinGoal: user.proteinGoal,
+      carbsGoal: user.carbsGoal,
+      fatGoal: user.fatGoal,
+    });
+    toast.success("Profile saved!");
+  };
+
+  return (
+    <div className="mx-auto min-h-screen max-w-md pb-32">
+      <header className="px-5 pt-8 pb-4">
+        <h1 className="text-[26px] font-semibold tracking-tight">Profile</h1>
+        <p className="mt-0.5 text-sm text-muted-foreground">Your goals and preferences</p>
+      </header>
+      <div className="mx-5 space-y-4">
+        {/* Auth Status Card */}
         <div className="rounded-3xl bg-card p-5 shadow-[var(--shadow-soft)]">
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3">
