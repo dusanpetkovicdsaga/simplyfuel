@@ -2,219 +2,1831 @@
   "foods": [
     {
       "id": "egg",
-      "name": "Eggs",
-      "keywords": ["egg", "eggs"],
-      "servingSize": { "amount": 1, "unit": "large" },
-      "grams": 50,
-      "calories": 78,
-      "protein": 6,
-      "carbs": 1,
-      "fat": 5,
-      "tags": ["protein", "breakfast"]
+      "name": "Egg",
+      "keywords": [
+        "egg",
+        "eggs"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 155,
+      "protein": 13,
+      "carbs": 1.1,
+      "fat": 11,
+      "tags": [
+        "protein",
+        "breakfast"
+      ],
+      "category": "protein"
+    },
+    {
+      "id": "chicken_breast",
+      "name": "Chicken Breast",
+      "keywords": [
+        "chicken",
+        "chicken breast",
+        "grilled chicken"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 165,
+      "protein": 31,
+      "carbs": 0,
+      "fat": 3.6,
+      "tags": [
+        "protein",
+        "lunch",
+        "dinner"
+      ],
+      "category": "meat"
+    },
+    {
+      "id": "salmon",
+      "name": "Salmon",
+      "keywords": [
+        "salmon"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 208,
+      "protein": 20,
+      "carbs": 0,
+      "fat": 13,
+      "tags": [
+        "protein",
+        "dinner"
+      ],
+      "category": "fish"
+    },
+    {
+      "id": "tuna",
+      "name": "Tuna",
+      "keywords": [
+        "tuna"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 132,
+      "protein": 29,
+      "carbs": 0,
+      "fat": 1,
+      "tags": [
+        "protein"
+      ],
+      "category": "fish"
+    },
+    {
+      "id": "ground_beef",
+      "name": "Ground Beef (90%)",
+      "keywords": [
+        "ground beef",
+        "minced beef"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 217,
+      "protein": 26,
+      "carbs": 0,
+      "fat": 12,
+      "tags": [
+        "protein"
+      ],
+      "category": "meat"
+    },
+    {
+      "id": "steak",
+      "name": "Beef Steak",
+      "keywords": [
+        "steak",
+        "beef"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 271,
+      "protein": 26,
+      "carbs": 0,
+      "fat": 19,
+      "tags": [
+        "protein"
+      ],
+      "category": "meat"
+    },
+    {
+      "id": "pork_chop",
+      "name": "Pork Chop",
+      "keywords": [
+        "pork",
+        "pork chop"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 231,
+      "protein": 25,
+      "carbs": 0,
+      "fat": 14,
+      "tags": [
+        "protein"
+      ],
+      "category": "meat"
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey Breast",
+      "keywords": [
+        "turkey"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 135,
+      "protein": 30,
+      "carbs": 0,
+      "fat": 1,
+      "tags": [
+        "protein"
+      ],
+      "category": "meat"
     },
     {
       "id": "bacon",
       "name": "Bacon",
-      "keywords": ["bacon"],
-      "servingSize": { "amount": 2, "unit": "strips" },
-      "grams": 30,
-      "calories": 130,
-      "protein": 9,
-      "carbs": 0,
-      "fat": 10,
-      "tags": ["protein", "breakfast"]
-    },
-    {
-      "id": "toast",
-      "name": "Toast",
-      "keywords": ["toast"],
-      "servingSize": { "amount": 1, "unit": "slice" },
-      "grams": 30,
-      "calories": 80,
-      "protein": 3,
-      "carbs": 14,
-      "fat": 1,
-      "tags": ["carbs", "breakfast"]
-    },
-    {
-      "id": "bread",
-      "name": "Bread",
-      "keywords": ["bread"],
-      "servingSize": { "amount": 1, "unit": "slice" },
-      "grams": 30,
-      "calories": 80,
-      "protein": 3,
-      "carbs": 14,
-      "fat": 1,
-      "tags": ["carbs"]
-    },
-    {
-      "id": "butter",
-      "name": "Butter",
-      "keywords": ["butter"],
-      "servingSize": { "amount": 1, "unit": "tbsp" },
-      "grams": 10,
-      "calories": 72,
-      "protein": 0,
-      "carbs": 0,
-      "fat": 8,
-      "tags": ["fat"]
-    },
-    {
-      "id": "coffee",
-      "name": "Coffee w/ Milk",
-      "keywords": ["coffee"],
-      "servingSize": { "amount": 1, "unit": "cup" },
-      "grams": 200,
-      "calories": 40,
-      "protein": 2,
-      "carbs": 4,
-      "fat": 2,
-      "tags": ["breakfast", "beverage"]
-    },
-    {
-      "id": "chicken",
-      "name": "Chicken Breast",
-      "keywords": ["chicken"],
-      "servingSize": { "amount": 150, "unit": "g" },
-      "grams": 150,
-      "calories": 240,
-      "protein": 45,
-      "carbs": 0,
-      "fat": 6,
-      "tags": ["protein", "lunch", "dinner"]
-    },
-    {
-      "id": "salad",
-      "name": "Mixed Salad",
-      "keywords": ["salad"],
-      "servingSize": { "amount": 100, "unit": "g" },
+      "keywords": [
+        "bacon"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
       "grams": 100,
-      "calories": 30,
-      "protein": 2,
-      "carbs": 5,
-      "fat": 1,
-      "tags": ["vegetables", "lunch", "dinner"]
+      "calories": 541,
+      "protein": 37,
+      "carbs": 1.4,
+      "fat": 42,
+      "tags": [
+        "breakfast"
+      ],
+      "category": "meat"
     },
     {
-      "id": "wrap",
-      "name": "Chicken Wrap",
-      "keywords": ["wrap"],
-      "servingSize": { "amount": 1, "unit": "wrap" },
-      "grams": 250,
-      "calories": 480,
-      "protein": 30,
-      "carbs": 45,
-      "fat": 18,
-      "tags": ["lunch"]
-    },
-    {
-      "id": "fries",
-      "name": "French Fries",
-      "keywords": ["fries", "chips"],
-      "servingSize": { "amount": 120, "unit": "g" },
-      "grams": 120,
-      "calories": 360,
-      "protein": 4,
-      "carbs": 45,
-      "fat": 18,
-      "tags": ["carbs", "snacks"]
-    },
-    {
-      "id": "pizza",
-      "name": "Pizza Slice",
-      "keywords": ["pizza"],
-      "servingSize": { "amount": 1, "unit": "slice" },
-      "grams": 120,
-      "calories": 285,
-      "protein": 12,
-      "carbs": 36,
-      "fat": 10,
-      "tags": ["dinner", "lunch"]
-    },
-    {
-      "id": "coke",
-      "name": "Coca-Cola",
-      "keywords": ["coke", "cola", "soda"],
-      "servingSize": { "amount": 330, "unit": "ml" },
-      "grams": 330,
-      "calories": 139,
-      "protein": 0,
-      "carbs": 35,
-      "fat": 0,
-      "tags": ["beverage", "snacks"]
-    },
-    {
-      "id": "steak",
-      "name": "Steak",
-      "keywords": ["steak", "beef"],
-      "servingSize": { "amount": 250, "unit": "g" },
-      "grams": 250,
-      "calories": 550,
-      "protein": 62,
-      "carbs": 0,
-      "fat": 32,
-      "tags": ["protein", "dinner"]
-    },
-    {
-      "id": "potato",
-      "name": "Potatoes",
-      "keywords": ["potato", "potatoes"],
-      "servingSize": { "amount": 200, "unit": "g" },
-      "grams": 200,
-      "calories": 170,
-      "protein": 4,
-      "carbs": 38,
-      "fat": 0,
-      "tags": ["carbs", "dinner"]
+      "id": "ham",
+      "name": "Ham",
+      "keywords": [
+        "ham"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 145,
+      "protein": 21,
+      "carbs": 1.5,
+      "fat": 5.5,
+      "tags": [
+        "protein"
+      ],
+      "category": "meat"
     },
     {
       "id": "rice",
-      "name": "White Rice",
-      "keywords": ["rice"],
-      "servingSize": { "amount": 150, "unit": "g" },
-      "grams": 150,
-      "calories": 200,
-      "protein": 4,
-      "carbs": 44,
+      "name": "White Rice (Cooked)",
+      "keywords": [
+        "rice",
+        "white rice"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 130,
+      "protein": 2.7,
+      "carbs": 28,
+      "fat": 0.3,
+      "tags": [
+        "carbs"
+      ],
+      "category": "grain"
+    },
+    {
+      "id": "brown_rice",
+      "name": "Brown Rice (Cooked)",
+      "keywords": [
+        "brown rice"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 123,
+      "protein": 2.7,
+      "carbs": 26,
       "fat": 1,
-      "tags": ["carbs", "lunch", "dinner"]
+      "tags": [
+        "carbs"
+      ],
+      "category": "grain"
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta (Cooked)",
+      "keywords": [
+        "pasta",
+        "spaghetti"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 157,
+      "protein": 5.8,
+      "carbs": 31,
+      "fat": 0.9,
+      "tags": [
+        "carbs"
+      ],
+      "category": "grain"
+    },
+    {
+      "id": "bread",
+      "name": "White Bread",
+      "keywords": [
+        "bread"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 265,
+      "protein": 9,
+      "carbs": 49,
+      "fat": 3.2,
+      "tags": [
+        "carbs"
+      ],
+      "category": "bread"
+    },
+    {
+      "id": "whole_wheat_bread",
+      "name": "Whole Wheat Bread",
+      "keywords": [
+        "whole wheat bread",
+        "brown bread"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 247,
+      "protein": 13,
+      "carbs": 41,
+      "fat": 4.2,
+      "tags": [
+        "carbs"
+      ],
+      "category": "bread"
+    },
+    {
+      "id": "oats",
+      "name": "Oats",
+      "keywords": [
+        "oats",
+        "oatmeal"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 389,
+      "protein": 17,
+      "carbs": 66,
+      "fat": 7,
+      "tags": [
+        "breakfast"
+      ],
+      "category": "grain"
+    },
+    {
+      "id": "potato",
+      "name": "Potato",
+      "keywords": [
+        "potato",
+        "potatoes"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 77,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 0.1,
+      "tags": [
+        "carbs"
+      ],
+      "category": "vegetable"
+    },
+    {
+      "id": "sweet_potato",
+      "name": "Sweet Potato",
+      "keywords": [
+        "sweet potato"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 86,
+      "protein": 1.6,
+      "carbs": 20,
+      "fat": 0.1,
+      "tags": [
+        "carbs"
+      ],
+      "category": "vegetable"
+    },
+    {
+      "id": "broccoli",
+      "name": "Broccoli",
+      "keywords": [
+        "broccoli"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 34,
+      "protein": 2.8,
+      "carbs": 7,
+      "fat": 0.4,
+      "tags": [
+        "vegetables"
+      ],
+      "category": "vegetable"
+    },
+    {
+      "id": "spinach",
+      "name": "Spinach",
+      "keywords": [
+        "spinach"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 23,
+      "protein": 2.9,
+      "carbs": 3.6,
+      "fat": 0.4,
+      "tags": [
+        "vegetables"
+      ],
+      "category": "vegetable"
+    },
+    {
+      "id": "tomato",
+      "name": "Tomato",
+      "keywords": [
+        "tomato"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 18,
+      "protein": 0.9,
+      "carbs": 3.9,
+      "fat": 0.2,
+      "tags": [
+        "vegetables"
+      ],
+      "category": "vegetable"
+    },
+    {
+      "id": "cucumber",
+      "name": "Cucumber",
+      "keywords": [
+        "cucumber"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 15,
+      "protein": 0.7,
+      "carbs": 3.6,
+      "fat": 0.1,
+      "tags": [
+        "vegetables"
+      ],
+      "category": "vegetable"
     },
     {
       "id": "apple",
       "name": "Apple",
-      "keywords": ["apple"],
-      "servingSize": { "amount": 1, "unit": "medium" },
-      "grams": 180,
-      "calories": 95,
-      "protein": 0,
-      "carbs": 25,
-      "fat": 0,
-      "tags": ["fruit", "snacks"]
+      "keywords": [
+        "apple"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 52,
+      "protein": 0.3,
+      "carbs": 14,
+      "fat": 0.2,
+      "tags": [
+        "fruit"
+      ],
+      "category": "fruit"
     },
     {
       "id": "banana",
       "name": "Banana",
-      "keywords": ["banana"],
-      "servingSize": { "amount": 1, "unit": "medium" },
-      "grams": 120,
-      "calories": 105,
-      "protein": 1,
-      "carbs": 27,
-      "fat": 0,
-      "tags": ["fruit", "snacks"]
+      "keywords": [
+        "banana"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 89,
+      "protein": 1.1,
+      "carbs": 23,
+      "fat": 0.3,
+      "tags": [
+        "fruit"
+      ],
+      "category": "fruit"
     },
     {
-      "id": "yogurt",
-      "name": "Greek Yogurt",
-      "keywords": ["yogurt", "yoghurt"],
-      "servingSize": { "amount": 150, "unit": "g" },
-      "grams": 150,
-      "calories": 90,
-      "protein": 9,
+      "id": "orange",
+      "name": "Orange",
+      "keywords": [
+        "orange"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 47,
+      "protein": 0.9,
       "carbs": 12,
-      "fat": 1,
-      "tags": ["protein", "breakfast", "snacks"]
-    }
+      "fat": 0.1,
+      "tags": [
+        "fruit"
+      ],
+      "category": "fruit"
+    },
+    {
+      "id": "greek_yogurt",
+      "name": "Greek Yogurt",
+      "keywords": [
+        "greek yogurt",
+        "yogurt",
+        "yoghurt"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 59,
+      "protein": 10,
+      "carbs": 3.6,
+      "fat": 0.4,
+      "tags": [
+        "protein",
+        "breakfast"
+      ],
+      "category": "dairy"
+    },
+    {
+      "id": "milk",
+      "name": "Whole Milk",
+      "keywords": [
+        "milk"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "ml"
+      },
+      "grams": 100,
+      "calories": 61,
+      "protein": 3.2,
+      "carbs": 4.8,
+      "fat": 3.3,
+      "tags": [
+        "dairy"
+      ],
+      "category": "dairy"
+    },
+    {
+      "id": "cheddar",
+      "name": "Cheddar Cheese",
+      "keywords": [
+        "cheddar"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 403,
+      "protein": 25,
+      "carbs": 1.3,
+      "fat": 33,
+      "tags": [
+        "dairy"
+      ],
+      "category": "dairy"
+    },
+    {
+      "id": "mozzarella",
+      "name": "Mozzarella",
+      "keywords": [
+        "mozzarella"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 280,
+      "protein": 28,
+      "carbs": 3.1,
+      "fat": 17,
+      "tags": [
+        "dairy"
+      ],
+      "category": "dairy"
+    },
+    {
+      "id": "olive_oil",
+      "name": "Olive Oil",
+      "keywords": [
+        "olive oil"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 884,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 100,
+      "tags": [
+        "fat"
+      ],
+      "category": "oil"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "keywords": [
+        "butter"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 717,
+      "protein": 0.9,
+      "carbs": 0.1,
+      "fat": 81,
+      "tags": [
+        "fat"
+      ],
+      "category": "oil"
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "keywords": [
+        "pizza"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 266,
+      "protein": 11,
+      "carbs": 33,
+      "fat": 10,
+      "tags": [
+        "fast_food"
+      ],
+      "category": "fast_food"
+    },
+    {
+      "id": "burger",
+      "name": "Cheeseburger",
+      "keywords": [
+        "burger",
+        "cheeseburger"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 295,
+      "protein": 17,
+      "carbs": 30,
+      "fat": 13,
+      "tags": [
+        "fast_food"
+      ],
+      "category": "fast_food"
+    },
+    {
+      "id": "fries",
+      "name": "French Fries",
+      "keywords": [
+        "fries",
+        "chips"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 312,
+      "protein": 3.4,
+      "carbs": 41,
+      "fat": 15,
+      "tags": [
+        "fast_food"
+      ],
+      "category": "fast_food"
+    },
+    {
+      "id": "coke",
+      "name": "Coca-Cola",
+      "keywords": [
+        "coke",
+        "cola"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "ml"
+      },
+      "grams": 100,
+      "calories": 42,
+      "protein": 0,
+      "carbs": 10.6,
+      "fat": 0,
+      "tags": [
+        "beverage"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "coffee",
+      "name": "Black Coffee",
+      "keywords": [
+        "coffee"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "ml"
+      },
+      "grams": 100,
+      "calories": 2,
+      "protein": 0.3,
+      "carbs": 0,
+      "fat": 0,
+      "tags": [
+        "beverage"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "beer",
+      "name": "Beer",
+      "keywords": [
+        "beer"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "ml"
+      },
+      "grams": 100,
+      "calories": 43,
+      "protein": 0.5,
+      "carbs": 3.6,
+      "fat": 0,
+      "tags": [
+        "beverage"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "almonds",
+      "name": "Almonds",
+      "keywords": [
+        "almonds"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 579,
+      "protein": 21,
+      "carbs": 22,
+      "fat": 50,
+      "tags": [
+        "snack"
+      ],
+      "category": "nuts"
+    },
+    {
+      "id": "peanut_butter",
+      "name": "Peanut Butter",
+      "keywords": [
+        "peanut butter"
+      ],
+      "servingSize": {
+        "amount": 100,
+        "unit": "g"
+      },
+      "grams": 100,
+      "calories": 588,
+      "protein": 25,
+      "carbs": 20,
+      "fat": 50,
+      "tags": [
+        "snack"
+      ],
+      "category": "spread"
+    },
+  {
+      "id": "avocado",
+      "name": "Avocado",
+      "keywords": ["avocado"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 160,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 15,
+      "tags": ["fruit", "healthy_fat"],
+      "category": "fruit"
+    },
+    {
+      "id": "blueberries",
+      "name": "Blueberries",
+      "keywords": ["blueberries", "blueberry"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 57,
+      "protein": 0.7,
+      "carbs": 14.5,
+      "fat": 0.3,
+      "tags": ["fruit"],
+      "category": "fruit"
+    },
+    {
+      "id": "strawberries",
+      "name": "Strawberries",
+      "keywords": ["strawberries", "strawberry"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 32,
+      "protein": 0.7,
+      "carbs": 7.7,
+      "fat": 0.3,
+      "tags": ["fruit"],
+      "category": "fruit"
+    },
+    {
+      "id": "grapes",
+      "name": "Grapes",
+      "keywords": ["grapes", "grape"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 69,
+      "protein": 0.7,
+      "carbs": 18,
+      "fat": 0.2,
+      "tags": ["fruit"],
+      "category": "fruit"
+    },
+    {
+      "id": "pineapple",
+      "name": "Pineapple",
+      "keywords": ["pineapple"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 50,
+      "protein": 0.5,
+      "carbs": 13,
+      "fat": 0.1,
+      "tags": ["fruit"],
+      "category": "fruit"
+    },
+    {
+      "id": "watermelon",
+      "name": "Watermelon",
+      "keywords": ["watermelon"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 30,
+      "protein": 0.6,
+      "carbs": 8,
+      "fat": 0.2,
+      "tags": ["fruit"],
+      "category": "fruit"
+    },
+    {
+      "id": "pear",
+      "name": "Pear",
+      "keywords": ["pear"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 57,
+      "protein": 0.4,
+      "carbs": 15,
+      "fat": 0.1,
+      "tags": ["fruit"],
+      "category": "fruit"
+    },
+    {
+      "id": "kiwi",
+      "name": "Kiwi",
+      "keywords": ["kiwi"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 61,
+      "protein": 1.1,
+      "carbs": 15,
+      "fat": 0.5,
+      "tags": ["fruit"],
+      "category": "fruit"
+    },
+    {
+      "id": "mango",
+      "name": "Mango",
+      "keywords": ["mango"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 60,
+      "protein": 0.8,
+      "carbs": 15,
+      "fat": 0.4,
+      "tags": ["fruit"],
+      "category": "fruit"
+    },
+    {
+      "id": "peach",
+      "name": "Peach",
+      "keywords": ["peach"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 39,
+      "protein": 0.9,
+      "carbs": 10,
+      "fat": 0.3,
+      "tags": ["fruit"],
+      "category": "fruit"
+    },
+    {
+      "id": "lettuce",
+      "name": "Lettuce",
+      "keywords": ["lettuce"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 15,
+      "protein": 1.4,
+      "carbs": 2.9,
+      "fat": 0.2,
+      "tags": ["vegetables"],
+      "category": "vegetable"
+    },
+    {
+      "id": "carrot",
+      "name": "Carrot",
+      "keywords": ["carrot", "carrots"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 41,
+      "protein": 0.9,
+      "carbs": 10,
+      "fat": 0.2,
+      "tags": ["vegetables"],
+      "category": "vegetable"
+    },
+    {
+      "id": "onion",
+      "name": "Onion",
+      "keywords": ["onion", "onions"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 40,
+      "protein": 1.1,
+      "carbs": 9.3,
+      "fat": 0.1,
+      "tags": ["vegetables"],
+      "category": "vegetable"
+    },
+    {
+      "id": "bell_pepper",
+      "name": "Bell Pepper",
+      "keywords": ["bell pepper", "pepper", "capsicum"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 31,
+      "protein": 1,
+      "carbs": 6,
+      "fat": 0.3,
+      "tags": ["vegetables"],
+      "category": "vegetable"
+    },
+    {
+      "id": "mushroom",
+      "name": "Mushrooms",
+      "keywords": ["mushroom", "mushrooms"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 22,
+      "protein": 3.1,
+      "carbs": 3.3,
+      "fat": 0.3,
+      "tags": ["vegetables"],
+      "category": "vegetable"
+    },
+    {
+      "id": "zucchini",
+      "name": "Zucchini",
+      "keywords": ["zucchini", "courgette"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 17,
+      "protein": 1.2,
+      "carbs": 3.1,
+      "fat": 0.3,
+      "tags": ["vegetables"],
+      "category": "vegetable"
+    },
+    {
+      "id": "cabbage",
+      "name": "Cabbage",
+      "keywords": ["cabbage"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 25,
+      "protein": 1.3,
+      "carbs": 6,
+      "fat": 0.1,
+      "tags": ["vegetables"],
+      "category": "vegetable"
+    },
+    {
+      "id": "cauliflower",
+      "name": "Cauliflower",
+      "keywords": ["cauliflower"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 25,
+      "protein": 1.9,
+      "carbs": 5,
+      "fat": 0.3,
+      "tags": ["vegetables"],
+      "category": "vegetable"
+    },
+    {
+      "id": "green_beans",
+      "name": "Green Beans",
+      "keywords": ["green beans", "beans"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 31,
+      "protein": 1.8,
+      "carbs": 7,
+      "fat": 0.2,
+      "tags": ["vegetables"],
+      "category": "vegetable"
+    },
+    {
+      "id": "corn",
+      "name": "Corn",
+      "keywords": ["corn", "sweet corn"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 96,
+      "protein": 3.4,
+      "carbs": 21,
+      "fat": 1.5,
+      "tags": ["vegetables"],
+      "category": "vegetable"
+    },
+    {
+      "id": "quinoa",
+      "name": "Quinoa",
+      "keywords": ["quinoa"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 120,
+      "protein": 4.4,
+      "carbs": 21,
+      "fat": 1.9,
+      "tags": ["grain"],
+      "category": "grain"
+    },
+    {
+      "id": "couscous",
+      "name": "Couscous",
+      "keywords": ["couscous"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 112,
+      "protein": 3.8,
+      "carbs": 23,
+      "fat": 0.2,
+      "tags": ["grain"],
+      "category": "grain"
+    },
+    {
+      "id": "bulgur",
+      "name": "Bulgur",
+      "keywords": ["bulgur"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 83,
+      "protein": 3.1,
+      "carbs": 19,
+      "fat": 0.2,
+      "tags": ["grain"],
+      "category": "grain"
+    },
+    {
+      "id": "bagel",
+      "name": "Bagel",
+      "keywords": ["bagel"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 250,
+      "protein": 10,
+      "carbs": 49,
+      "fat": 1.5,
+      "tags": ["bread"],
+      "category": "bread"
+    },
+    {
+      "id": "tortilla",
+      "name": "Flour Tortilla",
+      "keywords": ["tortilla"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 310,
+      "protein": 8,
+      "carbs": 52,
+      "fat": 8,
+      "tags": ["bread"],
+      "category": "bread"
+    },
+    {
+      "id": "pita",
+      "name": "Pita Bread",
+      "keywords": ["pita"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 275,
+      "protein": 9,
+      "carbs": 55,
+      "fat": 1.2,
+      "tags": ["bread"],
+      "category": "bread"
+    },
+    {
+      "id": "wrap",
+      "name": "Wrap",
+      "keywords": ["wrap"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 290,
+      "protein": 8,
+      "carbs": 49,
+      "fat": 7,
+      "tags": ["bread"],
+      "category": "bread"
+    },
+    {
+      "id": "shrimp",
+      "name": "Shrimp",
+      "keywords": ["shrimp", "prawns"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 99,
+      "protein": 24,
+      "carbs": 0.2,
+      "fat": 0.3,
+      "tags": ["protein"],
+      "category": "fish"
+    },
+    {
+      "id": "cod",
+      "name": "Cod",
+      "keywords": ["cod"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 82,
+      "protein": 18,
+      "carbs": 0,
+      "fat": 0.7,
+      "tags": ["protein"],
+      "category": "fish"
+    },
+    {
+      "id": "sardines",
+      "name": "Sardines",
+      "keywords": ["sardines", "sardine"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 208,
+      "protein": 25,
+      "carbs": 0,
+      "fat": 11,
+      "tags": ["protein"],
+      "category": "fish"
+    },
+    {
+      "id": "feta",
+      "name": "Feta Cheese",
+      "keywords": ["feta", "feta cheese"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 265,
+      "protein": 14,
+      "carbs": 4,
+      "fat": 21,
+      "tags": ["dairy"],
+      "category": "dairy"
+    },
+    {
+      "id": "cottage_cheese",
+      "name": "Cottage Cheese",
+      "keywords": ["cottage cheese"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 98,
+      "protein": 11,
+      "carbs": 3.4,
+      "fat": 4.3,
+      "tags": ["dairy"],
+      "category": "dairy"
+    },
+    {
+      "id": "cream_cheese",
+      "name": "Cream Cheese",
+      "keywords": ["cream cheese"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 342,
+      "protein": 6,
+      "carbs": 4,
+      "fat": 34,
+      "tags": ["dairy"],
+      "category": "dairy"
+    },
+    {
+      "id": "parmesan",
+      "name": "Parmesan",
+      "keywords": ["parmesan"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 431,
+      "protein": 38,
+      "carbs": 4,
+      "fat": 29,
+      "tags": ["dairy"],
+      "category": "dairy"
+    },
+    {
+      "id": "walnuts",
+      "name": "Walnuts",
+      "keywords": ["walnuts", "walnut"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 654,
+      "protein": 15,
+      "carbs": 14,
+      "fat": 65,
+      "tags": ["nuts"],
+      "category": "nuts"
+    },
+    {
+      "id": "cashews",
+      "name": "Cashews",
+      "keywords": ["cashews", "cashew"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 553,
+      "protein": 18,
+      "carbs": 30,
+      "fat": 44,
+      "tags": ["nuts"],
+      "category": "nuts"
+    },
+    {
+      "id": "pistachios",
+      "name": "Pistachios",
+      "keywords": ["pistachios", "pistachio"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 562,
+      "protein": 20,
+      "carbs": 28,
+      "fat": 45,
+      "tags": ["nuts"],
+      "category": "nuts"
+    },
+    {
+      "id": "honey",
+      "name": "Honey",
+      "keywords": ["honey"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 304,
+      "protein": 0.3,
+      "carbs": 82,
+      "fat": 0,
+      "tags": ["sweetener"],
+      "category": "sweetener"
+    },
+    {
+      "id": "jam",
+      "name": "Fruit Jam",
+      "keywords": ["jam", "jelly"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 250,
+      "protein": 0.4,
+      "carbs": 65,
+      "fat": 0.1,
+      "tags": ["spread"],
+      "category": "spread"
+    },
+    {
+      "id": "dark_chocolate",
+      "name": "Dark Chocolate",
+      "keywords": ["dark chocolate", "chocolate"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 598,
+      "protein": 7.8,
+      "carbs": 46,
+      "fat": 43,
+      "tags": ["dessert"],
+      "category": "dessert"
+    },
+    {
+      "id": "milk_chocolate",
+      "name": "Milk Chocolate",
+      "keywords": ["milk chocolate", "chocolate"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 535,
+      "protein": 7.6,
+      "carbs": 59,
+      "fat": 30,
+      "tags": ["dessert"],
+      "category": "dessert"
+    },
+    {
+      "id": "ice_cream",
+      "name": "Vanilla Ice Cream",
+      "keywords": ["ice cream", "vanilla ice cream"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 207,
+      "protein": 3.5,
+      "carbs": 24,
+      "fat": 11,
+      "tags": ["dessert"],
+      "category": "dessert"
+    },
+    {
+      "id": "cheesecake",
+      "name": "Cheesecake",
+      "keywords": ["cheesecake"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 321,
+      "protein": 6,
+      "carbs": 26,
+      "fat": 23,
+      "tags": ["dessert"],
+      "category": "dessert"
+    },
+    {
+      "id": "brownie",
+      "name": "Brownie",
+      "keywords": ["brownie"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 466,
+      "protein": 5,
+      "carbs": 58,
+      "fat": 25,
+      "tags": ["dessert"],
+      "category": "dessert"
+    },
+    {
+      "id": "donut",
+      "name": "Donut",
+      "keywords": ["donut", "doughnut"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 452,
+      "protein": 4.9,
+      "carbs": 51,
+      "fat": 25,
+      "tags": ["dessert"],
+      "category": "dessert"
+    },
+    {
+      "id": "croissant",
+      "name": "Croissant",
+      "keywords": ["croissant"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 406,
+      "protein": 8,
+      "carbs": 45,
+      "fat": 21,
+      "tags": ["breakfast"],
+      "category": "bakery"
+    },
+    {
+      "id": "muffin",
+      "name": "Blueberry Muffin",
+      "keywords": ["muffin"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 377,
+      "protein": 5,
+      "carbs": 53,
+      "fat": 16,
+      "tags": ["dessert"],
+      "category": "bakery"
+    },
+    {
+      "id": "protein_bar",
+      "name": "Protein Bar",
+      "keywords": ["protein bar"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 390,
+      "protein": 33,
+      "carbs": 35,
+      "fat": 14,
+      "tags": ["snack", "protein"],
+      "category": "snack"
+    },
+    {
+      "id": "popcorn",
+      "name": "Air Popped Popcorn",
+      "keywords": ["popcorn"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 387,
+      "protein": 13,
+      "carbs": 78,
+      "fat": 4.5,
+      "tags": ["snack"],
+      "category": "snack"
+    },
+    {
+      "id": "potato_chips",
+      "name": "Potato Chips",
+      "keywords": ["chips", "crisps", "potato chips"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 536,
+      "protein": 7,
+      "carbs": 53,
+      "fat": 35,
+      "tags": ["snack"],
+      "category": "snack"
+    },
+    {
+      "id": "nachos",
+      "name": "Nachos",
+      "keywords": ["nachos"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 489,
+      "protein": 7,
+      "carbs": 57,
+      "fat": 25,
+      "tags": ["snack"],
+      "category": "snack"
+    },
+    {
+      "id": "pretzels",
+      "name": "Pretzels",
+      "keywords": ["pretzels"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 380,
+      "protein": 10,
+      "carbs": 80,
+      "fat": 3,
+      "tags": ["snack"],
+      "category": "snack"
+    },
+    {
+      "id": "granola",
+      "name": "Granola",
+      "keywords": ["granola"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 471,
+      "protein": 10,
+      "carbs": 64,
+      "fat": 20,
+      "tags": ["breakfast"],
+      "category": "breakfast"
+    },
+    {
+      "id": "cornflakes",
+      "name": "Cornflakes",
+      "keywords": ["cornflakes", "cereal"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 357,
+      "protein": 8,
+      "carbs": 84,
+      "fat": 0.4,
+      "tags": ["breakfast"],
+      "category": "breakfast"
+    },
+    {
+      "id": "scrambled_eggs",
+      "name": "Scrambled Eggs",
+      "keywords": ["scrambled eggs"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 149,
+      "protein": 10,
+      "carbs": 2,
+      "fat": 11,
+      "tags": ["breakfast", "protein"],
+      "category": "breakfast"
+    },
+    {
+      "id": "fried_egg",
+      "name": "Fried Egg",
+      "keywords": ["fried egg"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 196,
+      "protein": 14,
+      "carbs": 1,
+      "fat": 15,
+      "tags": ["breakfast"],
+      "category": "breakfast"
+    },
+    {
+      "id": "boiled_egg",
+      "name": "Boiled Egg",
+      "keywords": ["boiled egg", "hard boiled egg"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 155,
+      "protein": 13,
+      "carbs": 1.1,
+      "fat": 11,
+      "tags": ["protein"],
+      "category": "breakfast"
+    },
+    {
+      "id": "omelette",
+      "name": "Omelette",
+      "keywords": ["omelette", "omelet"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 154,
+      "protein": 11,
+      "carbs": 2,
+      "fat": 11,
+      "tags": ["breakfast"],
+      "category": "breakfast"
+    },
+    {
+      "id": "sausage",
+      "name": "Pork Sausage",
+      "keywords": ["sausage", "sausages"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 301,
+      "protein": 13,
+      "carbs": 2,
+      "fat": 27,
+      "tags": ["protein"],
+      "category": "meat"
+    },
+    {
+      "id": "hot_dog",
+      "name": "Hot Dog",
+      "keywords": ["hot dog"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 290,
+      "protein": 11,
+      "carbs": 4,
+      "fat": 26,
+      "tags": ["fast_food"],
+      "category": "fast_food"
+    },
+    {
+      "id": "chicken_wings",
+      "name": "Chicken Wings",
+      "keywords": ["chicken wings", "wings"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 203,
+      "protein": 30,
+      "carbs": 0,
+      "fat": 8,
+      "tags": ["protein"],
+      "category": "meat"
+    },
+    {
+      "id": "chicken_thigh",
+      "name": "Chicken Thigh",
+      "keywords": ["chicken thigh"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 209,
+      "protein": 26,
+      "carbs": 0,
+      "fat": 11,
+      "tags": ["protein"],
+      "category": "meat"
+    },
+    {
+      "id": "duck",
+      "name": "Duck",
+      "keywords": ["duck"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 337,
+      "protein": 19,
+      "carbs": 0,
+      "fat": 28,
+      "tags": ["protein"],
+      "category": "meat"
+    },
+    {
+      "id": "lamb",
+      "name": "Lamb",
+      "keywords": ["lamb"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 294,
+      "protein": 25,
+      "carbs": 0,
+      "fat": 21,
+      "tags": ["protein"],
+      "category": "meat"
+    },
+    {
+      "id": "veal",
+      "name": "Veal",
+      "keywords": ["veal"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 172,
+      "protein": 24,
+      "carbs": 0,
+      "fat": 8,
+      "tags": ["protein"],
+      "category": "meat"
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu",
+      "keywords": ["tofu"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 76,
+      "protein": 8,
+      "carbs": 2,
+      "fat": 5,
+      "tags": ["vegan", "protein"],
+      "category": "plant_protein"
+    },
+    {
+      "id": "tempeh",
+      "name": "Tempeh",
+      "keywords": ["tempeh"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 193,
+      "protein": 20,
+      "carbs": 9,
+      "fat": 11,
+      "tags": ["vegan", "protein"],
+      "category": "plant_protein"
+    },
+    {
+      "id": "lentils",
+      "name": "Cooked Lentils",
+      "keywords": ["lentils", "lentil"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 116,
+      "protein": 9,
+      "carbs": 20,
+      "fat": 0.4,
+      "tags": ["vegan"],
+      "category": "legume"
+    },
+    {
+      "id": "black_beans",
+      "name": "Black Beans",
+      "keywords": ["black beans"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 132,
+      "protein": 9,
+      "carbs": 24,
+      "fat": 0.5,
+      "tags": ["vegan"],
+      "category": "legume"
+    },
+    {
+      "id": "kidney_beans",
+      "name": "Kidney Beans",
+      "keywords": ["kidney beans"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 127,
+      "protein": 8.7,
+      "carbs": 23,
+      "fat": 0.5,
+      "tags": ["vegan"],
+      "category": "legume"
+    },
+    {
+      "id": "chickpeas",
+      "name": "Chickpeas",
+      "keywords": ["chickpeas", "garbanzo beans"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 164,
+      "protein": 9,
+      "carbs": 27,
+      "fat": 2.6,
+      "tags": ["vegan"],
+      "category": "legume"
+    },
+    {
+      "id": "hummus",
+      "name": "Hummus",
+      "keywords": ["hummus"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 166,
+      "protein": 8,
+      "carbs": 14,
+      "fat": 10,
+      "tags": ["dip"],
+      "category": "spread"
+    },
+    {
+      "id": "mayonnaise",
+      "name": "Mayonnaise",
+      "keywords": ["mayonnaise", "mayo"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 680,
+      "protein": 1,
+      "carbs": 1,
+      "fat": 75,
+      "tags": ["condiment"],
+      "category": "sauce"
+    },
+    {
+      "id": "ketchup",
+      "name": "Ketchup",
+      "keywords": ["ketchup"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 112,
+      "protein": 1.3,
+      "carbs": 27,
+      "fat": 0.2,
+      "tags": ["condiment"],
+      "category": "sauce"
+    },
+    {
+      "id": "mustard",
+      "name": "Mustard",
+      "keywords": ["mustard"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 66,
+      "protein": 4,
+      "carbs": 6,
+      "fat": 4,
+      "tags": ["condiment"],
+      "category": "sauce"
+    },
+    {
+      "id": "bbq_sauce",
+      "name": "BBQ Sauce",
+      "keywords": ["bbq sauce", "barbecue sauce"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 172,
+      "protein": 1,
+      "carbs": 43,
+      "fat": 0.5,
+      "tags": ["condiment"],
+      "category": "sauce"
+    },
+    {
+      "id": "soy_sauce",
+      "name": "Soy Sauce",
+      "keywords": ["soy sauce"],
+      "servingSize": { "amount": 100, "unit": "g" },
+      "grams": 100,
+      "calories": 53,
+      "protein": 8,
+      "carbs": 5,
+      "fat": 0.6,
+      "tags": ["condiment"],
+      "category": "sauce"
+    },
+    {
+      "id": "orange_juice",
+      "name": "Orange Juice",
+      "keywords": ["orange juice"],
+      "servingSize": { "amount": 100, "unit": "ml" },
+      "grams": 100,
+      "calories": 45,
+      "protein": 0.7,
+      "carbs": 10.4,
+      "fat": 0.2,
+      "tags": ["drink"],
+      "category": "beverage"
+    },
+    {
+      "id": "apple_juice",
+      "name": "Apple Juice",
+      "keywords": ["apple juice"],
+      "servingSize": { "amount": 100, "unit": "ml" },
+      "grams": 100,
+      "calories": 46,
+      "protein": 0.1,
+      "carbs": 11.3,
+      "fat": 0.1,
+      "tags": ["drink"],
+      "category": "beverage"
+    } 
   ]
 }
