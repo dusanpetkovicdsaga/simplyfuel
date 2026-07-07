@@ -1,30 +1,31 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
-import OpenAI from 'openai';
+import type { VercelRequest, VercelResponse } from "@vercel/node";
+import OpenAI from "openai";
+import { readFileSync } from "fs";
+import { join } from "path";
 
-// @ts-ignore - JSON import
-import foodsData from '../src/data/foods.json';
+// Load foods database at runtime to avoid import-assertion issues in ESM
+const foodsData = JSON.parse(
+  readFileSync(join(process.cwd(), "src", "data", "foods.json"), "utf-8"),
+);
 
-export default async function handler(
-  req: VercelRequest,
-  res: VercelResponse,
-) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Only allow POST requests
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
   }
 
   try {
     const { input } = req.body;
 
     if (!input?.trim()) {
-      return res.status(400).json({ error: 'Input is required' });
+      return res.status(400).json({ error: "Input is required" });
     }
 
     // Check for API key
     const apiKey = process.env.OPENAI_API_KEY;
-    
+
     if (!apiKey) {
-      console.warn('OPENAI_API_KEY not set, using mock analysis');
+      console.warn("OPENAI_API_KEY not set, using mock analysis");
       const mockResult = await mockAnalysis(input);
       return res.status(200).json(mockResult);
     }
@@ -36,18 +37,22 @@ export default async function handler(
     const systemPrompt = `You are a nutrition expert AI that analyzes meal descriptions and returns structured nutrition data.
 
 FOOD DATABASE (use these for accurate nutrition data when possible):
-${JSON.stringify(foodsData.foods.map(f => ({
-  name: f.name,
-  keywords: f.keywords,
-  serving: f.servingSize,
-  per_serving: {
-    calories: f.calories,
-    protein: f.protein,
-    carbs: f.carbs,
-    fat: f.fat,
-    grams: f.grams
-  }
-})), null, 2)}
+${JSON.stringify(
+  foodsData.foods.map((f) => ({
+    name: f.name,
+    keywords: f.keywords,
+    serving: f.servingSize,
+    per_serving: {
+      calories: f.calories,
+      protein: f.protein,
+      carbs: f.carbs,
+      fat: f.fat,
+      grams: f.grams,
+    },
+  })),
+  null,
+  2,
+)}
 
 INSTRUCTIONS:
 1. Parse the user's meal description into individual food items
@@ -89,27 +94,27 @@ RULES:
 
     // Call OpenAI
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: "gpt-4o-mini",
       messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: userPrompt },
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userPrompt },
       ],
-      response_format: { type: 'json_object' },
+      response_format: { type: "json_object" },
       temperature: 0.3,
       max_tokens: 1000,
     });
 
     const content = completion.choices[0]?.message?.content;
-    
+
     if (!content) {
-      throw new Error('No response from OpenAI');
+      throw new Error("No response from OpenAI");
     }
 
     const result = JSON.parse(content);
 
     // Validate and ensure correct structure
     if (!result.foods || !Array.isArray(result.foods)) {
-      throw new Error('Invalid response structure from AI');
+      throw new Error("Invalid response structure from AI");
     }
 
     // Ensure totals are calculated
@@ -131,18 +136,17 @@ RULES:
     }
 
     return res.status(200).json(result);
-
   } catch (error) {
-    console.error('Error analyzing meal:', error);
-    
+    console.error("Error analyzing meal:", error);
+
     // Fallback to mock on error
     try {
       const mockResult = await mockAnalysis(req.body.input);
       return res.status(200).json(mockResult);
     } catch (fallbackError) {
-      return res.status(500).json({ 
-        error: 'Failed to analyze meal',
-        message: error instanceof Error ? error.message : 'Unknown error'
+      return res.status(500).json({
+        error: "Failed to analyze meal",
+        message: error instanceof Error ? error.message : "Unknown error",
       });
     }
   }
@@ -175,7 +179,7 @@ async function mockAnalysis(input: string) {
   // Default if nothing matched
   if (foods.length === 0) {
     foods.push({
-      name: input.trim() || 'Meal',
+      name: input.trim() || "Meal",
       quantity: 1,
       grams: 200,
       calories: 400,
@@ -205,26 +209,36 @@ async function mockAnalysis(input: string) {
 
 function parseQuantity(text: string, keyword: string): number {
   const numWords: Record<string, number> = {
-    a: 1, an: 1, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6,
+    a: 1,
+    an: 1,
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
   };
-  
+
   const idx = text.indexOf(keyword);
   if (idx === -1) return 1;
-  
-  const before = text.slice(Math.max(0, idx - 20), idx).trim().split(/\s+/);
+
+  const before = text
+    .slice(Math.max(0, idx - 20), idx)
+    .trim()
+    .split(/\s+/);
   const last = before[before.length - 1];
   if (!last) return 1;
-  
+
   const n = parseInt(last, 10);
   if (!Number.isNaN(n)) return n;
-  
+
   return numWords[last.toLowerCase()] ?? 1;
 }
 
 function detectMealType() {
   const h = new Date().getHours();
-  if (h < 11) return 'Breakfast';
-  if (h < 15) return 'Lunch';
-  if (h < 21) return 'Dinner';
-  return 'Snacks';
+  if (h < 11) return "Breakfast";
+  if (h < 15) return "Lunch";
+  if (h < 21) return "Dinner";
+  return "Snacks";
 }
