@@ -1,5 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import OpenAI from 'openai';
+
+// @ts-ignore - JSON import
 import foodsData from '../src/data/foods.json';
 
 export default async function handler(

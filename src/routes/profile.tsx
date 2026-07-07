@@ -20,7 +20,7 @@ export const Route = createFileRoute("/profile")({
 function Page() {
   const [logMealOpen, setLogMealOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
-  
+
   const { user: authUser, signOut, loading: authLoading } = useAuth();
   const user = useAppStore((s) => s.user);
   const updateUser = useAppStore((s) => s.updateUser);
@@ -68,9 +68,7 @@ function Page() {
                 <CloudOff className="h-5 w-5 text-muted-foreground" />
               )}
               <div>
-                <p className="text-sm font-medium">
-                  {authUser ? "Signed In" : "Local Only"}
-                </p>
+                <p className="text-sm font-medium">{authUser ? "Signed In" : "Local Only"}</p>
                 <p className="text-xs text-muted-foreground">
                   {authUser ? authUser.email : "Data saved locally"}
                 </p>
