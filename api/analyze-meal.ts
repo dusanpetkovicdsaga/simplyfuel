@@ -104,6 +104,9 @@ RULES:
       max_tokens: 1000,
     });
 
+    // Capture token usage info if provided by the API
+    const usage = (completion as any)?.usage ?? null;
+
     const content = completion.choices[0]?.message?.content;
 
     if (!content) {
@@ -128,7 +131,11 @@ RULES:
       { calories: 0, protein: 0, carbs: 0, fat: 0 },
     );
 
+
     result.totals = totals;
+    // Include token usage in the response (total and breakdown if available)
+    result.tokens = usage?.total_tokens ?? (usage ? (usage.prompt_tokens + usage.completion_tokens) : null);
+    result.tokenUsage = usage ?? null;
 
     // Ensure mealType is set
     if (!result.mealType) {
@@ -204,6 +211,8 @@ async function mockAnalysis(input: string) {
     foods,
     totals,
     usingMock: true,
+    tokens: 0,
+    tokenUsage: { total_tokens: 0, prompt_tokens: 0, completion_tokens: 0 },
   };
 }
 
